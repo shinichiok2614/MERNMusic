@@ -6,6 +6,7 @@ let initWebRouter = (app) => {
 		return res.send('hello');
 	});
 	router.get('/home', getHomePage);
+	// router.get
 	return app.use('/', router);
 };
 module.exports = initWebRouter;
