@@ -2,6 +2,7 @@ const initWebRouter = require('./src/routes/route');
 const express = require('express');
 const authRouter = require('./src/routes/auth');
 const connectDB = require('./src/config/connectDB');
+const myMusicRouter = require('./src/routes/mymusic');
 const musicRouter = require('./src/routes/music');
 
 require('dotenv').config();
@@ -13,6 +14,7 @@ initWebRouter(app);
 
 connectDB();
 app.use('/api/auth', authRouter);
+app.use('/api/mymusic', myMusicRouter);
 app.use('/api/music', musicRouter);
 
 const port = process.env.PORT || 8000;

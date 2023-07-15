@@ -6,6 +6,14 @@ POST http://localhost:8080/api/auth/register
 Content-Type: application/json
 
 {
+    "username":"lambda1",
+    "password":"lambda1"
+}
+###
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
     "username":"lambda2",
     "password":"lambda2"
 }
@@ -14,11 +22,11 @@ POST http://localhost:8080/api/auth/login
 Content-Type: application/json
 
 {
-    "username":"lambda2",
-    "password":"lambda2"
+    "username":"lambda1",
+    "password":"lambda1"
 }
 ###
-POST http://localhost:8080/api/music
+POST http://localhost:8080/api/mymusic
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGIxZjhkMWE3NDUwYTA2NTdkZWJkMGQiLCJpYXQiOjE2ODkzOTA5NTV9.utNB7xaePCELTP3odZNGlvsOdv3Rw7W741tnnzY_Gec
 
@@ -29,19 +37,44 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGIxZ
   "status": "TO LEARN"
 }
 ###
-POST http://localhost:8080/api/music
+POST http://localhost:8080/api/mymusic
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGIxZjhkMWE3NDUwYTA2NTdkZWJkMGQiLCJpYXQiOjE2ODkzOTA5NTV9.utNB7xaePCELTP3odZNGlvsOdv3Rw7W741tnnzY_Gec
 
 {
-  "title": "Vue",
-  "url": "Vue",
-  "album": "Vue.com",
-  "lyrics": "TO LEARN"
+  "title": "React",
+  "url": "React",
+  "album": "React.com",
+  "lyrics": "TO FUN"
 }
 ###
-GET http://localhost:8080/api/music
+POST http://localhost:8080/api/mymusic
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGIxZjhkMWE3NDUwYTA2NTdkZWJkMGQiLCJpYXQiOjE2ODkzOTA5NTV9.utNB7xaePCELTP3odZNGlvsOdv3Rw7W741tnnzY_Gec
+
+{
+  "title": "React2",
+  "url": "React2",
+  "album": "React2.com",
+  "lyrics": "TO FUN"
+}
+###
+POST http://localhost:8080/api/mymusic
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGIyMmRlNmQxMDMxZDFiZDAzZTU4MDUiLCJpYXQiOjE2ODkzOTg3OTB9.8oBqECe-HgZYRABtsGz8HbNKhUh09kr6OrHb3j2f6t8
+
+{
+  "title": "ve",
+  "url": "ve",
+  "album": "ve.com",
+  "lyrics": "TO FUN"
+}
+###
+GET http://localhost:8080/api/mymusic
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGIxZjhkMWE3NDUwYTA2NTdkZWJkMGQiLCJpYXQiOjE2ODkzOTA5NTV9.utNB7xaePCELTP3odZNGlvsOdv3Rw7W741tnnzY_Gec
 ###
-DELETE http://localhost:8080/api/music/64b21c5d502eb6131dfe47ba
+DELETE http://localhost:8080/api/mymusic/64b21c5d502eb6131dfe47ba
+###
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGIxZjhkMWE3NDUwYTA2NTdkZWJkMGQiLCJpYXQiOjE2ODkzOTA5NTV9.utNB7xaePCELTP3odZNGlvsOdv3Rw7W741tnnzY_Gec
+###
+GET http://localhost:8080/api/music
