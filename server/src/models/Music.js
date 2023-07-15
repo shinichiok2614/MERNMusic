@@ -6,15 +6,14 @@ const MusicSchema = new Schema({
 		type: String,
 		required: true,
 	},
-	description: {
+	album: {
 		type: String,
 	},
 	url: {
 		type: String,
 	},
-	status: {
+	lyrics: {
 		type: String,
-		enum: ['TO LEARN', 'LEARNING', 'LEARNED'],
 	},
 	user: {
 		type: Schema.Types.ObjectId,

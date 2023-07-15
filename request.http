@@ -6,30 +6,6 @@ POST http://localhost:8080/api/auth/register
 Content-Type: application/json
 
 {
-    "username":"jim",
-    "password":"jim"
-}
-###
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-
-{
-    "username":"shinichiok",
-    "password":"shinichiok"
-}
-###
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-
-{
-    "username":"phuonghoangit",
-    "password":"phuonghoangit"
-}
-###
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-
-{
     "username":"lambda2",
     "password":"lambda2"
 }
@@ -41,3 +17,31 @@ Content-Type: application/json
     "username":"lambda2",
     "password":"lambda2"
 }
+###
+POST http://localhost:8080/api/music
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGIxZjhkMWE3NDUwYTA2NTdkZWJkMGQiLCJpYXQiOjE2ODkzOTA5NTV9.utNB7xaePCELTP3odZNGlvsOdv3Rw7W741tnnzY_Gec
+
+{
+  "title": "Vue",
+  "description": "Vue",
+  "url": "Vue.com",
+  "status": "TO LEARN"
+}
+###
+POST http://localhost:8080/api/music
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGIxZjhkMWE3NDUwYTA2NTdkZWJkMGQiLCJpYXQiOjE2ODkzOTA5NTV9.utNB7xaePCELTP3odZNGlvsOdv3Rw7W741tnnzY_Gec
+
+{
+  "title": "Vue",
+  "url": "Vue",
+  "album": "Vue.com",
+  "lyrics": "TO LEARN"
+}
+###
+GET http://localhost:8080/api/music
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGIxZjhkMWE3NDUwYTA2NTdkZWJkMGQiLCJpYXQiOjE2ODkzOTA5NTV9.utNB7xaePCELTP3odZNGlvsOdv3Rw7W741tnnzY_Gec
+###
+DELETE http://localhost:8080/api/music/64b21c5d502eb6131dfe47ba
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGIxZjhkMWE3NDUwYTA2NTdkZWJkMGQiLCJpYXQiOjE2ODkzOTA5NTV9.utNB7xaePCELTP3odZNGlvsOdv3Rw7W741tnnzY_Gec

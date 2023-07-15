@@ -2,7 +2,6 @@ const initWebRouter = require('./src/routes/route');
 const express = require('express');
 const authRouter = require('./src/routes/auth');
 const connectDB = require('./src/config/connectDB');
-// const connectDB = require('./src/config/connect2');
 const musicRouter = require('./src/routes/music');
 
 require('dotenv').config();
