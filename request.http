@@ -78,3 +78,5 @@ DELETE http://localhost:8080/api/mymusic/64b21c5d502eb6131dfe47ba
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGIxZjhkMWE3NDUwYTA2NTdkZWJkMGQiLCJpYXQiOjE2ODkzOTA5NTV9.utNB7xaePCELTP3odZNGlvsOdv3Rw7W741tnnzY_Gec
 ###
 GET http://localhost:8080/api/music
+###
+https://jsonplaceholder.typicode.com/posts

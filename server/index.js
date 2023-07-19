@@ -5,10 +5,14 @@ const connectDB = require('./src/config/connectDB');
 const myMusicRouter = require('./src/routes/mymusic');
 const musicRouter = require('./src/routes/music');
 
+var cors = require('cors');
+
 require('dotenv').config();
 
 let app = express();
 app.use(express.json()); //đọc được dữ liệu json từ request
+
+app.use(cors()); //cho phép CORS với toàn bộ route
 
 initWebRouter(app);
 
