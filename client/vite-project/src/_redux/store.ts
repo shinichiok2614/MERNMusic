@@ -1,11 +1,18 @@
-import { configureStore } from '@reduxjs/toolkit';
-import musicReducer from './features/music';
-const store = configureStore({
-	reducer: {
-		// user: userReducer,
-		music: musicReducer,
-	},
-});
-// Infer the `RootState` and `AppDispatch` types from the store itself
-export type RootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
+import axios from 'axios';
+import { BASE_URL } from '.';
+import { createSlice } from '@reduxjs/toolkit';
+
+const getlistmusic = axios.get(BASE_URL).then((res) => res.data);
+console.log(getlistmusic);
+const initialState = {
+	status: 'none',
+	list: 'none',
+};
+const store = createSlice({
+    name: 'haha',
+    initialState,
+    reducers: {},
+extraReducers(builder) {
+    builder.addCase
+},
+})
