@@ -17,3 +17,5 @@ play
 music/readonly/customer
 get list all
 play
+
+yarn add react-redux @reduxjs/toolkit
